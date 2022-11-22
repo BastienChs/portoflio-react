@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Bilal";
+    src: url("assets/fonts/Bilal.otf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("assets/fonts/OpenSans.ttf");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("assets/fonts/Oswald.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+.primary-color {
+    color: #1d5187;
+}
+.primary-color-border {
+    border-color: #1d5187;
+}
+
+.secondary-color {
+    color: #49a1b8;
+}
+
+.secondary-color-border {
+    border-color: #49a1b8;
+}
+
+.third-color {
+    color: #71deae;
+}
+
+.third-color-border {
+    border-color: #71deae;
+}
+
+.third-color-background {
+    background-color: #71deae;
+}

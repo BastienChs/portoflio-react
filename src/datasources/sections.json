@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "label": "Hero",
+    "anchor": "hero-section",
+    "order": 1
+  },
+  "about": {
+    "title": "About me",
+    "label": "About",
+    "anchor": "about-section",
+    "order": 2
+  }
+}
