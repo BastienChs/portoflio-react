@@ -17,8 +17,12 @@
     background: #ececec;
 }
 
-.social-networks button:hover, .social-network-icon:hover{
-    color: #49a1b8;
-    border-color: #49a1b8;
-    fill: #49a1b8;
+.social-network-icon{
+    color: rgb(156 163 175);
+}
+
+.social-networks a:hover, .social-networks a:hover > svg *{
+    color: #71deae;
+    border-color: #71deae;
+    /*fill: #71deae;*/
 }

@@ -19,17 +19,22 @@ const Hero = () => {
                                         <button className={'text-white p-2 w-1/3 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>My work</button>
                                         <button className={'text-white ml-2 p-2 w-1/3 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Contact me</button>
                                     </div>
+                                <div className="relative flex py-5 w-3/4 items-center">
+                                    <div className="flex-grow border-t border-gray-400"></div>
+                                    <span className="flex-shrink mx-4 text-gray-400">Social Networks</span>
+                                    <div className="flex-grow border-t border-gray-400"></div>
+                                </div>
+                                <div className={'w-3/4 social-networks flex justify-around'}>
+                                    <IconContext.Provider value={{size:'1.5em', className: 'social-network-icon'}}>
+                                        <a href={'https://www.linkedin.com/in/bastien-chies/'} target={'_blank'} rel={'noreferrer'} className={'bg-transparent border-gray-400 border-2 rounded rounded-full p-2 m-2'}><FaLinkedin/></a>
+                                        <a href={'https://github.com/BastienChs'} target={'_blank'} rel={'noreferrer'} className={'bg-transparent border-gray-400 border-2 rounded rounded-full p-2 m-2'}><FaGithub/></a>
+                                        <a href={'https://twitter.com/ChsBastien'} target={'_blank'} rel={'noreferrer'} className={'bg-transparent border-gray-400 border-2 rounded rounded-full p-2 m-2'}><FaTwitter/></a>
+                                    </IconContext.Provider>
+                                </div>
                             </div>
                             <div className={'second-part border border-2 rounded-full third-color-border overflow-hidden'}>
                                 <img src={ProgrammerPana} alt="Programmer-pana" className={'programmer-pana-image'}/>
                             </div>
-                        </div>
-                        <div className={'flex justify-center social-networks'}>
-                            <IconContext.Provider value={{size:'1.5em', className: 'social-network-icon hover:animate-pulse' }}>
-                                <button className={'bg-transparent border-white border-2 rounded rounded-full p-4 m-4 text-white hover:animate-pulse transition duration-300 ease-in-out'}><FaLinkedin className={'h-full'}/></button>
-                                <button className={'bg-transparent border-white border-2 rounded rounded-full p-4 m-4 text-white hover:animate-pulse transition duration-300 ease-in-out'}><FaGithub/></button>
-                                <button className={'bg-transparent border-white border-2 rounded rounded-full p-4 m-4 text-white hover:animate-pulse transition duration-300 ease-in-out'}><FaTwitter/></button>
-                            </IconContext.Provider>
                         </div>
                     </div>
                 </div>
