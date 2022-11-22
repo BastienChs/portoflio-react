@@ -1,8 +1,7 @@
 .bg-hero-section{
-    /*background: white;*/
-    background: linear-gradient(135deg, #ececec 16.66%, transparent 0 83.33%, #ececec 0), conic-gradient(from 45deg at 66.66% 33.33%, #f1f1f1 135deg, rgba(241,241,241,0.75) 0% 225deg, rgba(241,241,241,0.5) 0%);
-    background-size: 100px 100px;
-    background-color: #ececec;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ececec 10px ), repeating-linear-gradient( #ececec, #f7f7f7 );
 }
 
 .resume-button{
