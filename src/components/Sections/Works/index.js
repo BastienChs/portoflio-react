@@ -16,7 +16,7 @@ const Works = () => {
     const worksListToDisplay = worksList.sort((a,b) =>b.project_date.localeCompare(a.project_date)).map((work, index) => {
         const {project_name, project_description, project_image, project_tags, project_date, project_github_link} = work
         return(
-            <div key={index} className="h-full rounded overflow-hidden shadow-lg m-2">
+            <div key={index} className="flex flex-col h-full rounded overflow-hidden shadow-lg m-2">
                 <div className={"w-full h-36 lg:h-72 object-cover relative bg-red-400"}>
                     <img className="object-cover h-full w-full" src={process.env.PUBLIC_URL + project_image} alt={project_name}/>
                 </div>
@@ -26,7 +26,6 @@ const Works = () => {
                     <p className="text-gray-700 text-base">
                         {project_description}
                     </p>
-                    <a href={project_github_link} className="text-blue-500 text-sm">Access to source</a>
                 </div>
                 <div className="px-6 pt-4 pb-2">
                     {
@@ -36,6 +35,10 @@ const Works = () => {
                             )
                         })
                     }
+                </div>
+                <div className={'mt-auto w-full p-5 text-center'}>
+                    <a href={project_github_link} target={'_blank'} rel={'noreferrer'}
+                       className={'text-sm text-white p-2 w-full rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Access to source</a>
                 </div>
             </div>
         )
