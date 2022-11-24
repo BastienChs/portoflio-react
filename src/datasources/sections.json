@@ -9,5 +9,11 @@
     "label": "About",
     "anchor": "about-section",
     "order": 2
+  },
+  "works": {
+    "title": "My works",
+    "label": "Works",
+    "anchor": "works-section",
+    "order": 3
   }
 }
