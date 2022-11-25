@@ -17,7 +17,7 @@ const Works = () => {
         const {project_name, project_description, project_image, project_tags, project_date, project_github_link} = work
         return(
             <div key={index} className="flex flex-col h-full rounded overflow-hidden shadow-lg m-2">
-                <div className={"w-full h-36 lg:h-72 object-cover relative bg-red-400"}>
+                <div className={"w-full h-36 lg:h-72 object-cover relative"}>
                     <img className="object-cover h-full w-full" src={process.env.PUBLIC_URL + project_image} alt={project_name}/>
                 </div>
                 <div className="px-6 py-4">
@@ -47,7 +47,7 @@ const Works = () => {
     return (
         <section className="works min-h-screen" id={"works-section"}>
             <main>
-                <h2 className={'w-full text-center'}>My works</h2>
+                <h2 className={'w-full text-left pl-10 text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30'}>02. My works</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 p-2 pl-10 pr-10 w-full">
                     {worksListToDisplay}
                 </div>

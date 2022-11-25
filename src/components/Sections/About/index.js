@@ -6,8 +6,8 @@ const About = () => {
     return (
     <section className="about" id={"about-section"}>
         <main>
-            <h2 className={'w-full text-center'}>About me</h2>
-            <div className={"h-screen grid place-items-center bg-about-section"}>
+            <h2 className={'w-full text-left pl-10 text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30'}>01.  About me </h2>
+            <div className={"h-screen grid place-items-center bg-about-section mt-6"}>
                 <div className={'h-full w-full p-2 grid grid-cols-3 gap-4 pl-10 pr-10 xs:pl-0'}>
                     <div className={'flex place-content-center p-2 bg-profile-pic h-full'}>
                             <img src={me} alt="Bastien Chies" className={'self-center rounded-full border border-2 third-color-border shadow-2xl sm:h-80 sm:w-80'}/>

@@ -20,11 +20,6 @@ const Hero = () => {
                                         <button className={'text-white p-2 w-1/3 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>My work</button>
                                         <button className={'text-white ml-2 p-2 w-1/3 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Contact me</button>
                                     </div>
-                                {/*<div className="relative flex py-5 w-3/4 items-center">*/}
-                                {/*    <div className="flex-grow border-t border-gray-400"></div>*/}
-                                {/*    <span className="flex-shrink mx-4 text-gray-400">Social Networks</span>*/}
-                                {/*    <div className="flex-grow border-t border-gray-400"></div>*/}
-                                {/*</div>*/}
                                 <TextDivider text={'Social Networks'} classes={'w-3/4'}/>
                                 <div className={'w-3/4 social-networks flex justify-around'}>
                                     <IconContext.Provider value={{size:'1.5em', className: 'social-network-icon'}}>

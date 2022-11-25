@@ -15,5 +15,11 @@
     "label": "Works",
     "anchor": "works-section",
     "order": 3
+  },
+  "experiences": {
+    "title": "My experiences",
+    "label": "Experiences",
+    "anchor": "experiences-section",
+    "order": 4
   }
 }
