@@ -5,6 +5,21 @@ import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import TextDivider from "../../Shared/TextDivider";
 
 const Hero = () => {
+
+    const toWorkSection = (e) => {
+        e.preventDefault()
+        document.querySelector('#works-section').scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
+    const toContactSection = (e) => {
+        e.preventDefault()
+        document.querySelector('#contact-section').scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <section className="hero" id={"hero-section"}>
             <main>
@@ -17,8 +32,8 @@ const Hero = () => {
                                 <p className={'text-gray-500 font-roboto text-left text-2xl mt-2'}>I'm a fullstack developer</p>
                                 <p className={'text-gray-500 font-roboto text-left text-2xl mt-2'}>I'm passionate about <span className={'portfolio-keywords'}>music</span></p>
                                     <div className={'resume-buttons mt-2 font-roboto'}>
-                                        <button className={'text-white p-2 lg:w-1/3 md:w-1/3 xs:w-full xs:text-sm rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>My work</button>
-                                        <button className={'text-white p-2 md:ml-2 lg:w-1/3 md:w-1/3 w-1/3 xs:w-full xs:text-sm xs:ml-0 xs:mt-2 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Contact me</button>
+                                        <button onClick={toWorkSection} className={'text-white p-2 lg:w-1/3 md:w-1/3 xs:w-full xs:text-sm rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>My work</button>
+                                        <button onClick={toContactSection} className={'text-white p-2 md:ml-2 lg:w-1/3 md:w-1/3 w-1/3 xs:w-full xs:text-sm xs:ml-0 xs:mt-2 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Contact me</button>
                                     </div>
                                 <TextDivider text={'Social Networks'} classes={'md:w-3/4 md:flex xs:hidden'}/>
                                 <div className={'lg:w-3/4 md:w-3/4 xs:w-full xs:mt-2 social-networks flex justify-around'}>
