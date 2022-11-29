@@ -7,12 +7,12 @@ const About = () => {
     <section className="about" id={"about-section"}>
         <main>
             <h2 className={'w-full text-left pl-10 text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30'}>01.  About me </h2>
-            <div className={"h-screen xs:h-fit grid place-items-center bg-about-section mt-6"}>
+            <div className={"xl:min-h-screen lg:min-h-screen md:min-h-screen xs:h-fit grid place-items-center bg-about-section mt-6"}>
                 <div className={'h-full w-full p-2 grid grid-cols-3 gap-4 pl-10 pr-10 xs:pl-10'}>
                     <div className={'flex place-content-center p-2 bg-profile-pic h-full lg:col-auto md:col-auto xs:col-span-3 lg:h-full md:h-full xs:h-40'}>
                             <img src={me} alt="Bastien Chies" className={'self-center rounded-full border border-2 third-color-border shadow-2xl sm:h-80 sm:w-80 xs:h-40 xs:w-40'}/>
                     </div>
-                    <div className={'flex flex-col lg:col-span-2 md:col-span-2 xs:col-span-3 ml-10 mr-10'}>
+                    <div className={'flex flex-col lg:col-span-2 md:col-span-2 xs:col-span-3 lg:ml-10 lg:mr-10 md:ml-10 md:mr-10'}>
                         <TextDivider text={'Who are you'} classes={'lg:w-2/4 md:w-2/4 xs:w-full self-center'}/>
                         <p className={'answer-about-me text-justify'}>
                             Hello, I'm Bastien! I work as a <span className={'portfolio-keywords font-bold'}>software engineer for five years now</span>, more than just a job, it's a passion to me.
