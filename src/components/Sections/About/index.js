@@ -7,12 +7,12 @@ const About = () => {
     <section className="about" id={"about-section"}>
         <main>
             <h2 className={'w-full text-left pl-10 text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30'}>01.  About me </h2>
-            <div className={"h-screen grid place-items-center bg-about-section mt-6"}>
-                <div className={'h-full w-full p-2 grid grid-cols-3 gap-4 pl-10 pr-10 xs:pl-0'}>
-                    <div className={'flex place-content-center p-2 bg-profile-pic h-full'}>
-                            <img src={me} alt="Bastien Chies" className={'self-center rounded-full border border-2 third-color-border shadow-2xl sm:h-80 sm:w-80'}/>
+            <div className={"h-screen xs:h-fit grid place-items-center bg-about-section mt-6"}>
+                <div className={'h-full w-full p-2 grid grid-cols-3 gap-4 pl-10 pr-10 xs:pl-10'}>
+                    <div className={'flex place-content-center p-2 bg-profile-pic h-full lg:col-auto md:col-auto xs:col-span-3 lg:h-full md:h-full xs:h-40'}>
+                            <img src={me} alt="Bastien Chies" className={'self-center rounded-full border border-2 third-color-border shadow-2xl sm:h-80 sm:w-80 xs:h-40 xs:w-40'}/>
                     </div>
-                    <div className={'flex flex-col col-span-2 ml-10 mr-10'}>
+                    <div className={'flex flex-col lg:col-span-2 md:col-span-2 xs:col-span-3 ml-10 mr-10'}>
                         <TextDivider text={'Who are you'} classes={'w-2/4 self-center'}/>
                         <p className={'answer-about-me text-justify'}>
                             Hello, I'm Bastien! I work as a <span className={'portfolio-keywords font-bold'}>software engineer for five years now</span>, more than just a job, it's a passion to me.
@@ -42,7 +42,7 @@ const About = () => {
                         <p className={'answer-about-me text-justify'}>
                             I never took a plane before 2022, this year I took it three times, once for going to Lisboa, one for doing a parachute jump and one for going to the Canada.
                         </p>
-                        <button className={'self-center text-sm text-white p-2 w-1/4 rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Downlowd my resume</button>
+                        <button className={'self-center text-sm text-white p-2 mt-4 mb-4 w-1/4 xs:w-full rounded bg-emerald-400 shadow-emerald-400 shadow-md hover:bg-emerald-300 hover:shadow-emerald-300 transition duration-300 ease-in-out'}>Downlowd my resume</button>
                     </div>
                 </div>
             </div>
