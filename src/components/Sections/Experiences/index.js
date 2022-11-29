@@ -50,10 +50,10 @@ const Experiences = () => {
     })
 
     return(
-      <section className="experiences min-h-screen" id={"experiences-section"}>
+      <section className="pl-10 pr-10 experiences min-h-screen" id={"experiences-section"}>
           <main>
-              <h2 className={'w-full text-left pl-10 pr-10 text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30 mt-6'}>03. My experiences</h2>
-              <div className={`grid grid-rows-${experiencesList.length} gap-6 mt-6 p-2 pl-10 pr-10 w-full`}>
+              <h2 className={'w-full text-left text-3xl font-bold font-opensans underline uppercase text-gray-500 opacity-30 mt-6'}>03. My experiences</h2>
+              <div className={`grid grid-rows-${experiencesList.length} gap-6 mt-6 p-2 w-full`}>
                   {displayExperiences}
               </div>
           </main>
