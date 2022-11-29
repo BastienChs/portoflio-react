@@ -26,7 +26,7 @@ const Header = () => {
 
     const displayNavLinks =  navLinks.map((navLink, index) => {
         return (
-            <li key={index} className="header__menu__item" onClick={onClickNavElem}>
+            <li key={index} className="header__menu__item" onClick={onClickNavElem} onTouchEnd={onClickNavElem}>
                 <a href={`#${navLink.anchor}`}>{navLink.label}</a>
             </li>
         )
