@@ -26,7 +26,7 @@ const Header = () => {
 
     const displayNavLinks =  navLinks.map((navLink, index) => {
         return (
-            <li key={index} className="header__menu__item" onClick={onClickNavElem} onTouchEnd={onClickNavElem}>
+            <li key={index} className="header__menu__item" onClick={onClickNavElem}>
                 <a href={`#${navLink.anchor}`}>{navLink.label}</a>
             </li>
         )
@@ -38,11 +38,12 @@ const Header = () => {
                 <h2 className={'ml-2 font-roboto text-2xl text-emerald-500'}><a href={'#hero-section'}>Bastien Chies.</a></h2>
             </div>
             <div className="header__menu w-5/6 place-self-center">
-                <ul className="flex gap-4 mr-2 float-right text-white font-roboto">
+                <ul className="lg:flex md:flex xs:hidden gap-4 mr-2 float-right text-white font-roboto">
                     {navHasBeenSet && displayNavLinks}
                 </ul>
             </div>
         </div>
+
     )
 }
 export default Header

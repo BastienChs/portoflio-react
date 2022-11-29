@@ -56,6 +56,7 @@ const Navbar = () => {
                 onMouseOver={displayTooltip}
                 onMouseOut={hideTooltip}
                 onClick={onClickNavElem}
+                onTouchEnd={onClickNavElem}
             >
                 <a href={`#${navLink.anchor}`} data-tooltip={navLink.label} className={'hidden text-xs font-roboto text-gray-200 ml-5 p-1 align-top rounded tooltip-background nav-dot'}>{navLink.label}</a>
             </li>
